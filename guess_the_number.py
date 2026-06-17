@@ -38,6 +38,7 @@ while essai != nombre_secret and nombre_essais < max_essais:
 if essai != nombre_secret:
     print("Dommage, tu as utilisé tous tes essais. Le nombre était " + str(nombre_secret) + ".")
 
+# Demande a l'utilisateur s'il veut relancer une partie
 rejouer = input("Veux-tu rejouer ? (oui/non) : ")
 if rejouer.strip().lower() == "oui":
     print("Relance le programme pour rejouer.")
