@@ -39,5 +39,5 @@ if essai != nombre_secret:
     print("Dommage, tu as utilisé tous tes essais. Le nombre était " + str(nombre_secret) + ".")
 
 rejouer = input("Veux-tu rejouer ? (oui/non) : ")
-if rejouer == "oui":
+if rejouer.lower() == "oui":
     print("Relance le programme pour rejouer.")
