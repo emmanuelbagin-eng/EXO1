@@ -21,8 +21,12 @@ while essai != nombre_secret and nombre_essais < max_essais:
 
     if essai < nombre_secret:
         print("Trop petit !")
+        if nombre_secret - essai <= 5:
+            print("Tu es tout proche !")
     elif essai > nombre_secret:
         print("Trop grand !")
+        if essai - nombre_secret <= 5:
+            print("Tu es tout proche !")
     else:
         print("Bravo ! Tu as trouvé le nombre " + str(nombre_secret) + " en " + str(nombre_essais) + " essais.")
 
